@@ -44,7 +44,7 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     AICarDemo/aicardemo.ui \
-    CameraDemo/cameraDemo.ui \
+    CameraDemo/camerademo.ui \
     CoreModule/coremodule.ui \
     GPSDemo/gpsdemo.ui \
     LCDCheck/lcdcheck.ui \

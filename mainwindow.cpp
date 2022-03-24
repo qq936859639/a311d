@@ -12,6 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    cameraThread = new CameraThread(this);
+    cameraThread->start();
 }
 
 MainWindow::~MainWindow()
@@ -21,7 +23,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btcamera_clicked()
 {
-    CameraDemo *camerademo = new CameraDemo(nullptr);
+    CameraDemo *camerademo = new CameraDemo(nullptr,cameraThread);
     camerademo->show();
 }
 
